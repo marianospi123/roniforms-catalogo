@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: roniforms-catalogo
+    runtime: node
+    plan: free
+    buildCommand: npm install && npm --prefix client install && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: ADMIN_ROUTE_TOKEN
+        generateValue: true
+      - key: CRON_SECRET
+        generateValue: true
+      - key: CLIENT_ORIGIN
+        value: "*"
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
+      - key: SUPABASE_STORAGE_BUCKET
+        value: product-images

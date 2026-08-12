@@ -1,0 +1,14 @@
+{
+  "name": "Roniforms — Catálogo escolar",
+  "short_name": "Roniforms",
+  "description": "Catálogo de precios al mayor de uniformes escolares Roniforms.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f8f8",
+  "theme_color": "#08768a",
+  "lang": "es-VE",
+  "icons": [
+    { "src": "/icons/roniforms-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/roniforms-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}
